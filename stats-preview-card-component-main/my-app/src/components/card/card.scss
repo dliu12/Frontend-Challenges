@@ -1,4 +1,10 @@
-body {
+.card-container {
+    width: fit-content;
+    height: fit-content;
     background-color: hsl(233, 47%, 7%);
     color: white;
+    margin: 0 auto;
+    align-self: center;
+    display: flex;
+    flex-direction: row;
 }

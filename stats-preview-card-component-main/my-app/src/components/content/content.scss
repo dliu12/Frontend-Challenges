@@ -1,0 +1,54 @@
+$testBoarder: 1px solid red;
+$transWhiteMain: hsla(0, 0%, 100%, 0.75);
+$transWhiteStat: hsla(0, 0%, 100%, 0.6);
+
+h2 {
+    margin: 0;
+    padding: 0;
+}
+.content {
+    // border: $testBoarder;
+    background-color: hsl(244, 38%, 16%);
+    height: auto;
+    padding: 2rem 5rem;
+    font-size: 16px;
+    font-family: 'Inter';
+    display: flex;
+    flex-direction: column;
+    // justify-content: flex-end;
+    .content-msg {
+        height: 70%;
+        // border: $testBoarder;
+    }
+}
+.content-mainMsg {
+    font-size: 42px;
+    span {
+        color: hsl(277, 64%, 61%);
+    }
+}
+.content-subMsg {
+    color: $transWhiteMain;
+}
+ul {
+    // border: 1px solid red;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    justify-content: space-evenly;
+    justify-self: flex-end;
+    li {
+        width: 100%;
+        // border: $testBoarder;
+        color: $transWhiteMain;
+        span {
+            color: white;
+            font-weight: 700;
+            font-size: 18px;
+        }
+    }
+}

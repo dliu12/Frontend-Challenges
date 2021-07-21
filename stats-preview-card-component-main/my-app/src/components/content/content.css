@@ -1,1 +1,66 @@
-/* No CSS *//*# sourceMappingURL=content.css.map */
+h2 {
+  margin: 0;
+  padding: 0;
+}
+
+.content {
+  background-color: #1b1938;
+  height: auto;
+  padding: 2rem 5rem;
+  font-size: 16px;
+  font-family: 'Inter';
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.content .content-msg {
+  height: 70%;
+}
+
+.content-mainMsg {
+  font-size: 42px;
+}
+
+.content-mainMsg span {
+  color: #aa5cdb;
+}
+
+.content-subMsg {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 0;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  justify-self: flex-end;
+}
+
+ul li {
+  width: 100%;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+ul li span {
+  color: white;
+  font-weight: 700;
+  font-size: 18px;
+}
+/*# sourceMappingURL=content.css.map */

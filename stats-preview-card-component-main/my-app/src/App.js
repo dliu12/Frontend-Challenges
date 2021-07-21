@@ -7,7 +7,10 @@ function App() {
     return (
         <Card>
             <Content />
-            <img src={image} />
+            <div className="card-img">
+                <div className="img-overlay" />
+                <img src={image} alt="workers sitting at table" />
+            </div>
         </Card>
     )
 }

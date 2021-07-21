@@ -1,33 +1,38 @@
 import './content.css'
+import '../../index.css'
 
 const Content = () => {
     return (
-        <div>
-            <h2>Get insights that help your business grow. </h2>
-            <p>
-                Discover the benefits of data analytics and make better decisions regarding revenue,
-                customer experience, and overall efficiency.
-            </p>
-            <ul>
+        <div className="content">
+            <div className="content-msg">
+                <h2 className="content-mainMsg">
+                    Get <span>insights</span> that help your business grow.{' '}
+                </h2>
+                <p className="content-subMsg">
+                    Discover the benefits of data analytics and make better decisions regarding
+                    revenue, customer experience, and overall efficiency.
+                </p>
+            </div>
+            <ul className="content-data">
                 <li>
-                    <span>10k+</span>
+                    <span className="content-data-bold">10k+</span>
                     <p>companies</p>
                 </li>
                 <li>
-                    <span>314</span>
+                    <span className="content-data-bold">314</span>
                     <p>templates</p>
                 </li>
-                <li>
-                    <span>12m+</span>
+                <li className="content-data-bold">
+                    <span>12M+</span>
                     <p>queries</p>
                 </li>
             </ul>
-            <div>
+            {/* <div>
                 Challenge by
                 <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
                     Frontend Mentor
                 </a>
-            </div>
+            </div> */}
         </div>
     )
 }

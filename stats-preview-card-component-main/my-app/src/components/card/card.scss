@@ -1,3 +1,6 @@
+$media1440: 1440px;
+$media680: 680px;
+
 .card-container {
     width: 66%;
     height: 50%;
@@ -6,27 +9,66 @@
     margin: 0 auto;
     padding: 8rem;
     align-self: center;
-    display: flex;
-    flex-direction: row;
-}
-.content {
-    width: 50%;
-    font-family: 'Inter', sans-serif;
-}
-.card-img {
-    width: 50%;
-    position: relative;
-    .img-overlay {
-        // border: 1px solid red;
+
+    @media all and (max-width: 1000px) {
         width: 100%;
-        height: 100%;
-        position: absolute;
-        z-index: 1;
-        background-color: hsl(274, 85%, 42%);
-        opacity: 0.55;
+        padding: 8vw;
     }
-    img {
+    @media all and (max-width: $media680) {
+        height: 100%;
+        width: 100%;
+        padding: 0;
+        overflow-y: scroll;
+    }
+
+    .card-content {
+        // border: 1px solid red;
+        display: flex;
+        flex-direction: row;
+        background-color: hsl(244, 38%, 16%);
         width: 100%;
         height: 100%;
+
+        @media all and (max-width: $media680) {
+            flex-direction: column-reverse;
+            width: 90%;
+            height: fit-content;
+            margin: 50px auto;
+            border-radius: 15px;
+        }
+
+        .content {
+            width: 50%;
+            @media all and (max-width: $media680) {
+                width: 100%;
+                height: 70%;
+            }
+        }
+        .card-img {
+            position: relative;
+            width: 50%;
+            @media all and (max-width: $media680) {
+                width: 100%;
+                height: 30%;
+            }
+            .img-overlay {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                z-index: 1;
+                background-color: hsl(274, 85%, 42%);
+                opacity: 0.55;
+                @media all and (max-width: $media680) {
+                    border-radius: 15px 15px 0 0;
+                }
+            }
+            img {
+                width: 100%;
+                height: 100%;
+                @media all and (max-width: $media680) {
+                    border-radius: 15px 15px 0 0;
+                }
+            }
+        }
     }
 }

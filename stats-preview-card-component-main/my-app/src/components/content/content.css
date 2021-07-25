@@ -1,14 +1,4 @@
-h2 {
-  margin: 0;
-  padding: 0;
-}
-
 .content {
-  background-color: #1b1938;
-  height: auto;
-  padding: 2rem 5rem;
-  font-size: 16px;
-  font-family: 'Inter';
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -16,25 +6,59 @@ h2 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem 6rem;
+  font-size: 16px;
+}
+
+@media all and (max-width: 1440px) {
+  .content {
+    padding: 2rem;
+  }
+}
+
+@media all and (max-width: 680px) {
+  .content {
+    padding: 15px 0;
+    text-align: center;
+  }
 }
 
 .content .content-msg {
-  height: 70%;
-}
-
-.content-mainMsg {
-  font-size: 42px;
-}
-
-.content-mainMsg span {
-  color: #aa5cdb;
-}
-
-.content-subMsg {
+  width: 90%;
+  height: 100%;
   color: rgba(255, 255, 255, 0.75);
 }
 
-ul {
+.content .content-msg .content-mainMsg {
+  color: white;
+  font-size: 42px;
+}
+
+@media all and (max-width: 1440px) {
+  .content .content-msg .content-mainMsg {
+    font-size: 35px;
+  }
+}
+
+.content .content-msg .content-mainMsg span {
+  color: #aa5cdb;
+}
+
+@media all and (max-width: 680px) {
+  .content .content-msg .content-subMsg {
+    line-height: 2;
+  }
+}
+
+.content .content-data {
+  margin: 0;
+  padding: 0;
   list-style-type: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -43,24 +67,32 @@ ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  width: 100%;
-  height: auto;
-  padding: 0;
-  margin: 0;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  justify-self: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: rgba(255, 255, 255, 0.6);
 }
 
-ul li {
-  width: 100%;
-  color: rgba(255, 255, 255, 0.75);
+@media all and (max-width: 680px) {
+  .content .content-data {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 50%;
+    padding-top: 25px;
+  }
 }
 
-ul li span {
+.content .content-data .content-data-bold {
   color: white;
   font-weight: 700;
   font-size: 18px;
+}
+
+@media all and (max-width: 680px) {
+  .content .content-data .content-data-bold {
+    font-size: 25px;
+  }
 }
 /*# sourceMappingURL=content.css.map */

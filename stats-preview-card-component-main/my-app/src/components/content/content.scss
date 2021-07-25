@@ -1,54 +1,66 @@
 $testBoarder: 1px solid red;
 $transWhiteMain: hsla(0, 0%, 100%, 0.75);
 $transWhiteStat: hsla(0, 0%, 100%, 0.6);
-
-h2 {
+$media1440: 1440px;
+$media680: 680px;
+@mixin nullMarPad {
     margin: 0;
     padding: 0;
 }
 .content {
-    // border: $testBoarder;
-    background-color: hsl(244, 38%, 16%);
-    height: auto;
-    padding: 2rem 5rem;
-    font-size: 16px;
-    font-family: 'Inter';
     display: flex;
     flex-direction: column;
-    // justify-content: flex-end;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 6rem;
+    font-size: 16px;
+    @media all and (max-width: $media1440) {
+        padding: 2rem;
+    }
+    @media all and (max-width: $media680) {
+        padding: 15px 0;
+        text-align: center;
+    }
     .content-msg {
-        height: 70%;
-        // border: $testBoarder;
-    }
-}
-.content-mainMsg {
-    font-size: 42px;
-    span {
-        color: hsl(277, 64%, 61%);
-    }
-}
-.content-subMsg {
-    color: $transWhiteMain;
-}
-ul {
-    // border: 1px solid red;
-    list-style-type: none;
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    height: auto;
-    padding: 0;
-    margin: 0;
-    justify-content: space-evenly;
-    justify-self: flex-end;
-    li {
-        width: 100%;
-        // border: $testBoarder;
+        width: 90%;
+        height: 100%;
         color: $transWhiteMain;
-        span {
+        .content-mainMsg {
+            color: white;
+            font-size: 42px;
+            @media all and (max-width: $media1440) {
+                font-size: 35px;
+            }
+            span {
+                color: hsl(277, 64%, 61%);
+            }
+        }
+        @media all and (max-width: $media680) {
+            .content-subMsg {
+                line-height: 2;
+            }
+        }
+    }
+    .content-data {
+        // border: $testBoarder;
+        @include nullMarPad();
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        color: $transWhiteStat;
+        @media all and (max-width: $media680) {
+            flex-direction: column;
+            height: 50%;
+            padding-top: 25px;
+        }
+        .content-data-bold {
             color: white;
             font-weight: 700;
             font-size: 18px;
+            @media all and (max-width: $media680) {
+                font-size: 25px;
+            }
         }
     }
 }

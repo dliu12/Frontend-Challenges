@@ -6,10 +6,12 @@ import image from './images/image-header-desktop.jpg'
 function App() {
     return (
         <Card>
-            <Content />
-            <div className="card-img">
-                <div className="img-overlay" />
-                <img src={image} alt="workers sitting at table" />
+            <div className="card-content">
+                <Content />
+                <div className="card-img">
+                    <div className="img-overlay" />
+                    <img src={image} alt="workers sitting at table" />
+                </div>
             </div>
         </Card>
     )

@@ -22,8 +22,8 @@ const Content = () => {
                     <span className="content-data-bold">314</span>
                     <p>templates</p>
                 </li>
-                <li className="content-data-bold">
-                    <span>12M+</span>
+                <li>
+                    <span className="content-data-bold">12M+</span>
                     <p>queries</p>
                 </li>
             </ul>

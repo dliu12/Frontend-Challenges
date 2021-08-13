@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/dliu12/Frontend-Challenges/static/css/main.ae6ea0af.chunk.css",
+    "main.js": "/dliu12/Frontend-Challenges/static/js/main.09f483c3.chunk.js",
+    "main.js.map": "/dliu12/Frontend-Challenges/static/js/main.09f483c3.chunk.js.map",
+    "runtime-main.js": "/dliu12/Frontend-Challenges/static/js/runtime-main.3bcaf39d.js",
+    "runtime-main.js.map": "/dliu12/Frontend-Challenges/static/js/runtime-main.3bcaf39d.js.map",
+    "static/js/2.33dffe5c.chunk.js": "/dliu12/Frontend-Challenges/static/js/2.33dffe5c.chunk.js",
+    "static/js/2.33dffe5c.chunk.js.map": "/dliu12/Frontend-Challenges/static/js/2.33dffe5c.chunk.js.map",
+    "static/js/3.7bdb6a0b.chunk.js": "/dliu12/Frontend-Challenges/static/js/3.7bdb6a0b.chunk.js",
+    "static/js/3.7bdb6a0b.chunk.js.map": "/dliu12/Frontend-Challenges/static/js/3.7bdb6a0b.chunk.js.map",
+    "index.html": "/dliu12/Frontend-Challenges/index.html",
+    "static/css/main.ae6ea0af.chunk.css.map": "/dliu12/Frontend-Challenges/static/css/main.ae6ea0af.chunk.css.map",
+    "static/js/2.33dffe5c.chunk.js.LICENSE.txt": "/dliu12/Frontend-Challenges/static/js/2.33dffe5c.chunk.js.LICENSE.txt",
+    "static/media/image-header-desktop.72d6e2a0.jpg": "/dliu12/Frontend-Challenges/static/media/image-header-desktop.72d6e2a0.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3bcaf39d.js",
+    "static/js/2.33dffe5c.chunk.js",
+    "static/css/main.ae6ea0af.chunk.css",
+    "static/js/main.09f483c3.chunk.js"
+  ]
+}
